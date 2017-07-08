@@ -1,14 +1,82 @@
 [
   {
+    "id": 1,
+    "model": "Huawei P8 lite",
+    "company": "Huawei",
+    "price": 140.15,
+    "rating": 3,
+    "image": "/thumbs/huawei-p8.jpg"
+  },
+  {
+    "id": 2,
+    "model": "Samsung J5",
+    "company": "Samsung",
+    "price": 180.00,
+    "rating": 4,
+    "image": "/thumbs/galaxy-j5.jpg"
+  },
+  {
+    "id": 3,
+    "model": "Homtom HT16",
+    "company": "LESHP",
+    "price": 59.99,
+    "rating": 3,
+    "image": "/thumbs/galaxy-s8.jpg"
+  },
+  {
     "id": 4,
-    "name": "Run"
+    "model": "Asus Zenfone 2 Laser",
+    "company": "Asus",
+    "price": 159,
+    "rating": 4,
+    "image": "/thumbs/asus-zenfone.jpg"
+  },
+  {
+    "id": 5,
+    "model": "Motorola Moto G4 Play",
+    "company": "Lenovo",
+    "price": 138.99,
+    "rating": 4,
+    "image": "/thumbs/moto-g4.jpg"
   },
   {
     "id": 6,
-    "name": "Forrest"
+    "model": "Apple iPhone 7",
+    "company": "Apple",
+    "price": 708.90,
+    "rating": 5,
+    "image": "/thumbs/iphone-7.jpg"
   },
   {
-    "id": 412,
-    "name": "Run"
+    "id": 7,
+    "model": "Apple iPhone 6",
+    "company": "Apple",
+    "price": 405,
+    "rating": 4,
+    "image": "/thumbs/iphone-6.jpg"
+  },
+  {
+    "id": 8,
+    "model": "Apple iPhone SE",
+    "company": "Apple",
+    "price": 301,
+    "rating": 5,
+    "image": "/thumbs/iphone-se.jpg"
+  },
+  {
+    "id": 9,
+    "model": "Google Pixel XL",
+    "company": "Google",
+    "price": 850,
+    "rating": 5,
+    "image": "/thumbs/pixel.jpg"
+  },
+  {
+    "id": 10,
+    "model": "Samsung Galaxy S8",
+    "company": "Samsung",
+    "price": 572.46,
+    "rating": 4,
+    "image": "/thumbs/galaxy-s8.jpg"
   }
 ]

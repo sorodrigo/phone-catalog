@@ -2,8 +2,9 @@ const Koa = require('koa');
 const koaLogger = require('koa-logger');
 const convert = require('koa-convert');
 const mount = require('koa-mount');
-const catalogueRouter = require('catalogue.router.js');
+const serve = require('koa-static');
 
+const catalogueRouter = require('catalogue.router');
 
 const koaBody = require('koa-body')({
   multipart: true,
@@ -45,6 +46,7 @@ app.use(async (ctx, next) => {
 });
 
 app.use(koaLogger());
+app.use(serve(`${__dirname}/public/`));
 app.use(mount('/api', catalogueRouter.middleware()));
 
 const server = app.listen(3000, () => {

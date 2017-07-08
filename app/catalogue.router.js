@@ -1,4 +1,5 @@
 const Router = require('koa-router');
+const Serializer = require('catalogue.serializer');
 const catalogueData = require('data.json');
 
 const router = new Router({
@@ -6,8 +7,8 @@ const router = new Router({
 });
 
 class Catalogue {
-  static async getAll(ctx, next) {
-    ctx.body = catalogueData;
+  static async getAll(ctx) {
+    ctx.body = Serializer.serialize(catalogueData);
   }
 }
 
