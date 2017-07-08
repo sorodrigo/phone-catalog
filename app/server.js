@@ -4,7 +4,7 @@ const convert = require('koa-convert');
 const mount = require('koa-mount');
 const serve = require('koa-static');
 
-const catalogueRouter = require('catalogue.router');
+const catalogueRouter = require('server/catalogue.router');
 
 const koaBody = require('koa-body')({
   multipart: true,
