@@ -4,7 +4,7 @@ const convert = require('koa-convert');
 const mount = require('koa-mount');
 const serve = require('koa-static');
 
-const catalogueRouter = require('server/catalogue.router');
+const phonesRouter = require('phones.router');
 
 const koaBody = require('koa-body')({
   multipart: true,
@@ -47,7 +47,7 @@ app.use(async (ctx, next) => {
 
 app.use(koaLogger());
 app.use(serve(`${__dirname}/public/`));
-app.use(mount('/api', catalogueRouter.middleware()));
+app.use(mount('/api', phonesRouter.middleware()));
 
 const server = app.listen(3000, () => {
   console.log('Server running on port 3000!');

@@ -8,12 +8,20 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
     depends_on:
-      - phone-cat
-  phone-cat:
+      - phone-cat-api
+  phone-cat-api:
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: ./phone-cat-api
+      dockerfile: ./phone-cat-api/Dockerfile
     ports:
       - 3000:3000
     restart: always
-    container_name: phone-cat-node
+    container_name: phone-cat-api-node
+  phone-cat-front:
+    build:
+      context: ./phone-cat-front
+      dockerfile: .phone-cat-front/Dockerfile
+    ports:
+      - 4200:4200
+    restart: always
+    container_name: phone-cat-front

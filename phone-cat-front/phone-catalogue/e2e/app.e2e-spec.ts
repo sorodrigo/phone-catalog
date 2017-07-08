@@ -1,10 +1,10 @@
-import { FrontPage } from './app.po';
+import { PhoneCataloguePage } from './app.po';
 
-describe('front App', () => {
-  let page: FrontPage;
+describe('phone-catalogue App', () => {
+  let page: PhoneCataloguePage;
 
   beforeEach(() => {
-    page = new FrontPage();
+    page = new PhoneCataloguePage();
   });
 
   it('should display welcome message', () => {

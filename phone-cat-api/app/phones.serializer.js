@@ -1,6 +1,6 @@
 const JSONAPISerializer = require('jsonapi-serializer').Serializer;
 
-const catalogueSerializer = new JSONAPISerializer('catalogue', {
+const phoneSerializer = new JSONAPISerializer('phone', {
   attributes: ['model', 'company', 'price', 'rating', 'image'],
   resource: {
     attributes: ['type', 'content']
@@ -8,10 +8,10 @@ const catalogueSerializer = new JSONAPISerializer('catalogue', {
   keyForAttribute: 'camelCase'
 });
 
-class CatalogueSerializer {
+class PhoneSerializer {
   static serialize(data) {
-    return catalogueSerializer.serialize(data);
+    return phoneSerializer.serialize(data);
   }
 }
 
-module.exports = CatalogueSerializer;
+module.exports = PhoneSerializer;
