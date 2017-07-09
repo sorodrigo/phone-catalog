@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
+import { environment } from '../environments/environment';
 import 'rxjs/add/observable/fromPromise';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -10,7 +11,7 @@ const Deserializer = new JsonApiSerializer.Deserializer({ keyForAttribute: 'came
 
 @Injectable()
 export class PhonesService {
-  private url = 'http://0.0.0.0:3000/api/phones';
+  private url = `${environment.API_BASE_URL}/api/phones`;
 
   constructor(private http: Http) { }
 

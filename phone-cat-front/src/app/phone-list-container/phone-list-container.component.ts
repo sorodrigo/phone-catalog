@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs/Observable';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-phone-list-container',
@@ -9,6 +9,7 @@ import { Observable } from 'rxjs/Observable';
 })
 export class PhoneListContainerComponent {
   public phones;
+  public BASE_URL = environment.API_BASE_URL;
 
   constructor(
     private store: Store<any>
