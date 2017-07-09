@@ -1,0 +1,9 @@
+<section>
+  <div
+    *ngFor="let phone of phones.list"
+  >
+    {{phone.model}}
+    {{phone.company}}
+    <img [attr.src]="'http://127.0.0.1:3000' + phone.image">
+  </div>
+</section>
