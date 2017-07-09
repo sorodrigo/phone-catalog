@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PhonesService } from './phones.service';
 import { Store } from '@ngrx/store';
-import { SET_PHONES } from './store/phones';
+import { SET_PHONES, SET_LOADING } from './store/phones';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +15,13 @@ export class AppComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.store.dispatch({ type: SET_LOADING, payload: true });
     this.phonesService.getPhones()
-      .then((phones) => this.store.dispatch({ type: SET_PHONES, payload: phones }));
+      .then(phones => this.update(phones));
+  }
+
+  update(phones) {
+    this.store.dispatch({ type: SET_PHONES, payload: phones });
+    this.store.dispatch({ type: SET_LOADING, payload: false });
   }
 }

@@ -1,9 +1,7 @@
 <section>
-  <div
-    *ngFor="let phone of phones.list"
+  <app-phone-detail-component
+    *ngFor="let phone of phones"
+    [phone]="phone"
   >
-    {{phone.model}}
-    {{phone.company}}
-    <img [attr.src]="BASE_URL + phone.image">
-  </div>
+  </app-phone-detail-component>
 </section>

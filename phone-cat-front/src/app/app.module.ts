@@ -7,6 +7,7 @@ import { phonesReducer } from './store/phones';
 
 import { AppComponent } from './app.component';
 import { PhoneListContainerComponent } from './phone-list-container/phone-list-container.component';
+import { PhoneDetailComponentComponent } from './phone-detail-component/phone-detail-component.component';
 
 const store = {
   phones: phonesReducer
@@ -15,7 +16,8 @@ const store = {
 @NgModule({
   declarations: [
     AppComponent,
-    PhoneListContainerComponent
+    PhoneListContainerComponent,
+    PhoneDetailComponentComponent
   ],
   imports: [
     BrowserModule,
