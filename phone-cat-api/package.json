@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "jsonapi-serializer": "^3.5.3",
+    "kcors": "^2.2.1",
     "koa": "^2.3.0",
     "koa-body": "^2.3.0",
     "koa-convert": "^1.2.0",

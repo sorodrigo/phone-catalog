@@ -3,6 +3,7 @@ const koaLogger = require('koa-logger');
 const convert = require('koa-convert');
 const mount = require('koa-mount');
 const serve = require('koa-static');
+const cors = require('kcors');
 
 const phonesRouter = require('phones.router');
 
@@ -21,6 +22,8 @@ const serializeError = (status, message) => ({
 });
 
 const app = new Koa();
+
+app.use(cors());
 
 app.use(convert(koaBody));
 
