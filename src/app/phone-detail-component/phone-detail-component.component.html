@@ -5,7 +5,7 @@
         <h3 class="title-heading-bold">{{phone.model}}</h3>
         <span class="light-subtitle">{{phone.company}}</span>
       </div>
-      <img [attr.src]="phone.image">
+      <div class="phone-image" [ngStyle]="{'background-image': 'url(' + phone.image +')'}"></div>
     </div>
     <div class="phone-description">
       <p class="text-content -light">{{phone.description}}</p>

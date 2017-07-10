@@ -5,6 +5,7 @@
   min-height: 350px;
   justify-content: space-between;
 
+
   .phone-detail-body {
     display: flex;
     justify-content: space-between;
@@ -17,6 +18,15 @@
       align-items: flex-start;
       justify-content: space-between;
       margin-left: 15px;
+
+      .phone-image {
+        height: 160px;
+        width: 160px;
+        border-radius: 4px;
+        background-color: $light-gray;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     }
 
     .phone-description {
@@ -34,8 +44,9 @@
   .phone-detail-footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     border-top: solid 1px rgba($light-gray, 0.3);
-    padding: 16px 0;
+    padding: 10px;
     height: 50px;
 
     .price-text {
