@@ -19,6 +19,8 @@ $ npm start
 
 # to run in dev mode
 $ docker-compose up --build
+
+# open another tab in terminal
 $ npm run dev
 ```
 
