@@ -1,0 +1,20 @@
+<article class="c-phone-detail">
+  <div class="phone-detail-body">
+    <div class="phone-details">
+      <div>
+        <h3 class="title-heading-bold">{{phone.model}}</h3>
+        <span class="light-subtitle">{{phone.company}}</span>
+      </div>
+      <img [attr.src]="phone.image">
+    </div>
+    <div class="phone-description">
+      <p class="text-content -light">{{phone.description}}</p>
+      <a [attr.href]="getPhoneLink(phone.model)">Buy now</a>
+      <span class="text-content">Rating: {{phone.rating}}</span>
+    </div>
+  </div>
+  <div class="phone-detail-footer">
+    <span class="price-text">Price</span>
+    <span class="price-number">{{phone.price | currency:'USD':true}}</span>
+  </div>
+</article>

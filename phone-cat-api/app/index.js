@@ -2,8 +2,10 @@ const Koa = require('koa');
 const koaLogger = require('koa-logger');
 const convert = require('koa-convert');
 const mount = require('koa-mount');
-const catalogueRouter = require('catalogue.router.js');
+const serve = require('koa-static');
+const cors = require('kcors');
 
+const phonesRouter = require('phones.router');
 
 const koaBody = require('koa-body')({
   multipart: true,
@@ -20,6 +22,8 @@ const serializeError = (status, message) => ({
 });
 
 const app = new Koa();
+
+app.use(cors());
 
 app.use(convert(koaBody));
 
@@ -45,7 +49,8 @@ app.use(async (ctx, next) => {
 });
 
 app.use(koaLogger());
-app.use(mount('/api', catalogueRouter.middleware()));
+app.use(serve(`${__dirname}/public/`));
+app.use(mount('/api', phonesRouter.middleware()));
 
 const server = app.listen(3000, () => {
   console.log('Server running on port 3000!');

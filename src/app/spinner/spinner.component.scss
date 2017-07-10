@@ -1,0 +1,43 @@
+@import "../../settings";
+.c-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner {
+  height: 70px;
+  width: 70px;
+  background: rgba($gray, 0.7);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .spinner-container {
+    height: 50px;
+    width: 50px;
+
+    .spinner-content {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      border: $white 1px dashed;
+
+      animation-name: spin;
+      animation-duration: 4000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+}

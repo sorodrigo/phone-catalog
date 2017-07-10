@@ -1,0 +1,36 @@
+{
+  "name": "phone-catalogue",
+  "version": "0.0.0",
+  "description": "Online phone catalogue application example built with Angular 4 + koa",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=prod NODE_PATH=app node app/index.js"
+  },
+  "dependencies": {
+    "jsonapi-serializer": "^3.5.3",
+    "kcors": "^2.2.1",
+    "koa": "^2.3.0",
+    "koa-body": "^2.3.0",
+    "koa-convert": "^1.2.0",
+    "koa-logger": "^3.0.1",
+    "koa-mount": "^3.0.0",
+    "koa-router": "^7.2.1",
+    "koa-static": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sorodrigo/phone-catalogue.git"
+  },
+  "keywords": [
+    "koa",
+    "angular",
+    "javascript",
+    "docker"
+  ],
+  "author": "solis.ro@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sorodrigo/phone-catalogue/issues"
+  },
+  "homepage": "https://github.com/sorodrigo/phone-catalogue#readme"
+}
