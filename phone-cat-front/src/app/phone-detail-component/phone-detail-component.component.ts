@@ -9,4 +9,7 @@ export class PhoneDetailComponentComponent {
   @Input() phone;
   constructor() { }
 
+  getPhoneLink(name) {
+    return `http://busqueda.fnac.es/SearchResult/ResultList.aspx?Search=${encodeURIComponent(name)}`;
+  }
 }

@@ -1,7 +1,15 @@
-<section>
-  <app-phone-detail-component
-    *ngFor="let phone of phones"
-    [phone]="phone"
-  >
-  </app-phone-detail-component>
+<section class="c-phone-list">
+  <div class="row align-center">
+    <ng-container *ngIf="!loading">
+      <app-phone-detail-component
+        *ngFor="let phone of phones"
+        [phone]="phone"
+        class="column small-12 medium-5"
+      >
+      </app-phone-detail-component>
+    </ng-container>
+    <ng-container *ngIf="loading">
+      Loading..
+    </ng-container>
+  </div>
 </section>

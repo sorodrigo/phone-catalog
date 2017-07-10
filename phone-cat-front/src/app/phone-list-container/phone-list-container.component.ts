@@ -10,14 +10,16 @@ import { environment } from '../../environments/environment';
 })
 export class PhoneListContainerComponent {
   public phones;
+  public loading;
   private BASE_URL = environment.API_BASE_URL;
 
   constructor(
     private store: Store<any>
   ) {
     store.select('phones')
-      .subscribe((phones: any) => {
-        this.phones = phones.list.map(phone => ({ ...phone, image: this.BASE_URL + phone.image }))
+      .subscribe((state: any) => {
+        this.phones = state.list.map(phone => ({ ...phone, image: this.BASE_URL + phone.image }));
+        this.loading = state.loading;
       });
   }
 }
