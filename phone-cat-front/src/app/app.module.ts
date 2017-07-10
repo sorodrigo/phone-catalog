@@ -8,6 +8,7 @@ import { phonesReducer } from './store/phones';
 import { AppComponent } from './app.component';
 import { PhoneListContainerComponent } from './phone-list-container/phone-list-container.component';
 import { PhoneDetailComponentComponent } from './phone-detail-component/phone-detail-component.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 const store = {
   phones: phonesReducer
@@ -17,7 +18,8 @@ const store = {
   declarations: [
     AppComponent,
     PhoneListContainerComponent,
-    PhoneDetailComponentComponent
+    PhoneDetailComponentComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
