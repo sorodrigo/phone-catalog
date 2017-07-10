@@ -21,3 +21,5 @@ $ npm start
 $ docker-compose up --build
 $ npm run dev
 ```
+
+![alt tag](https://raw.githubusercontent.com/sorodrigo/phone-catalog/master/phone-catalogue.gif)
