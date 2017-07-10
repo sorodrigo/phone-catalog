@@ -6,7 +6,7 @@ services:
       - 80:80
     container_name: phone-cat-nginx
     volumes:
-      - ./phone-cat-front/dist:/usr/share/nginx/html
+      - ./dist:/usr/share/nginx/html
     depends_on:
       - phone-cat-api
   phone-cat-api:

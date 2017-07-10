@@ -4,12 +4,13 @@
   "description": "Online phone catalogue application example built with Angular 4 + koa",
   "scripts": {
     "ng": "ng",
-    "start": "NODE_PATH=app npm run build && node server.js",
+    "start": "npm run build --prod && docker-compose up --build",
     "dev": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "npm run build"
   },
   "private": true,
   "dependencies": {
