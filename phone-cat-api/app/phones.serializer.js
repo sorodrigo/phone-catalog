@@ -1,7 +1,7 @@
 const JSONAPISerializer = require('jsonapi-serializer').Serializer;
 
 const phoneSerializer = new JSONAPISerializer('phone', {
-  attributes: ['model', 'company', 'price', 'rating', 'image'],
+  attributes: ['model', 'company', 'description', 'price', 'rating', 'image'],
   resource: {
     attributes: ['type', 'content']
   },

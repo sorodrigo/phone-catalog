@@ -2,6 +2,7 @@
   {
     "id": 1,
     "model": "Huawei P8 lite",
+    "description": "16GB, Black, Unlocked 4G LTE Smartphone, International Version, No Warranty",
     "company": "Huawei",
     "price": 140.15,
     "rating": 3,
@@ -10,6 +11,7 @@
   {
     "id": 2,
     "model": "Samsung J5",
+    "description": "J510M/DS 16GB Black, 5.2, Dual Sim, Factory Unlocked Phone, No Warranty - International Version",
     "company": "Samsung",
     "price": 180.00,
     "rating": 4,
@@ -18,14 +20,16 @@
   {
     "id": 3,
     "model": "Homtom HT16",
+    "description": "5.0 Inch Android 6.0 Smartphone, MTK6580 Quad Core 1.3 GHz, 1GB RAM + 8GB ROM GSM & WCDMA (Black)",
     "company": "LESHP",
     "price": 59.99,
     "rating": 3,
-    "image": "/thumbs/galaxy-s8.jpg"
+    "image": "/thumbs/homtom.jpg"
   },
   {
     "id": 4,
     "model": "Asus Zenfone 2 Laser",
+    "description": "Laser 5.5-inch Glacier Silver [ZC551KL] Laser auto-focus, 13MP Rear / 8MP Front camera, IPS FHD display, 2GB RAM, 32GB storage",
     "company": "Asus",
     "price": 159,
     "rating": 4,
@@ -34,6 +38,7 @@
   {
     "id": 5,
     "model": "Motorola Moto G4 Play",
+    "description": "PS LCD capacitive touchscreen, 16M colors 5.0 inches 720 x 1280 pixels Android OS, v6.0.1 (Marshmallow) Qualcomm MSM8916 Snapdragon 410 Quad-core 1.2 GHz Cortex-A53 Adreno 306 microSD, up to 256 GB (dedicated slot)16 GB internal Storage, 2 GB RAM Primary Camera 8 MP, f/2.2, autofocus, LED flash Secondary 5 MP, f/2.2 BATTERY Removable Li-Po 2800 mAh battery Fast Charging Compatible Not for Verizon, Boost, Sprint, Virgin Mobile nor any other CDMA Carrier",
     "company": "Lenovo",
     "price": 138.99,
     "rating": 4,
@@ -42,6 +47,7 @@
   {
     "id": 6,
     "model": "Apple iPhone 7",
+    "description": "Keep everything you love about iPhone up to date, secure, and accessible from any device with iCloud. Multi-Touch display with IPS technology. With just a single press, 3D Touch lets you do more than ever before. The 12-megapixel iSight camera captures sharp, detailed photos. It takes 4K video, up to four times the resolution of 1080p HD video.",
     "company": "Apple",
     "price": 708.90,
     "rating": 5,
@@ -50,6 +56,7 @@
   {
     "id": 7,
     "model": "Apple iPhone 6",
+    "description": "16GB Factory Unlocked GSM 4G LTE Smartphone, Space Grey (Certified Refurbished)",
     "company": "Apple",
     "price": 405,
     "rating": 4,
@@ -58,6 +65,7 @@
   {
     "id": 8,
     "model": "Apple iPhone SE",
+    "description": "Retina display; 4inch (diagonal) LEDbacklit widescreen MultiTouch display 12megapixel iSight camera with 1.22 pixels; f/2.2 aperture; Hybrid IR filter; Panorama (up to 63 megapixels) FaceTime HD Camera: 1.2megapixel photos; f/2.4 aperture; Improved local tone mapping; Retina Flash; Talk time: Up to 14 hours on 3G Fingerprint sensor built into the Home button; A9 chip with 64bit architecture; Embedded M9 motion coprocessor",
     "company": "Apple",
     "price": 301,
     "rating": 5,
@@ -66,6 +74,7 @@
   {
     "id": 9,
     "model": "Google Pixel XL",
+    "description": "The Google Pixel is powered by 1.6GHz quad-core Qualcomm Snapdragon 821 processor and it comes with 4GB of RAM. The phone packs 32GB of internal storage cannot be expanded. As far as the cameras are concerned, the Google Pixel packs a 12.3-megapixel primary camera on the rear and a 8-megapixel front shooter for selfies. The Google Pixel runs Android 7.1 and is powered by a 2770mAh non removable battery. It measures 143.80 x 69.50 x 8.60 (height x width x thickness) and weigh 143.00 grams.",
     "company": "Google",
     "price": 850,
     "rating": 5,
@@ -74,6 +83,7 @@
   {
     "id": 10,
     "model": "Samsung Galaxy S8",
+    "description": "Infinity Display: a bezel-less, full-frontal, edge-to-edge screen. Default resolution is Full HD+ and can be changed to Quad HD+ (WQHD+) in Settings Camera resolution - Front: 8 MP AF, Rear: 12 MP OIS AF Memory: Internal Memory 64 GB, RAM 4GB. Product Dimensions (inches)-2.89 x 6.28 x 0.32 (W x L x H) International version can be used with all GSM carriers worldwide, including the Americas: North America, Central and South America and the Caribbean",
     "company": "Samsung",
     "price": 572.46,
     "rating": 4,
