@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+@import "settings";
+@import "reset";
+@import '~foundation-sites/scss/foundation';
+@include foundation-flex-grid;
+@include foundation-flex-classes;
+@import "base";

@@ -2,8 +2,8 @@ FROM node:8.1-alpine
 
 MAINTAINER MAINTAINER solis.ro@gmail.com
 
-ENV NAME phone-cat
-ENV USER phone-cat
+ENV NAME phone-cat-api
+ENV USER phone-cat-api
 
 RUN apk update && apk upgrade && \
     apk add --no-cache --update bash git openssh python build-base
