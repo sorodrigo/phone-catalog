@@ -1,5 +1,7 @@
 # Phone Catalogue
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sorodrigo/phone-catalogue.svg)](https://greenkeeper.io/)
+
 Requirements
 - Node 8.1.x
 - NPM
